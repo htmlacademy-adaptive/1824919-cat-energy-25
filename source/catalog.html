@@ -2,22 +2,26 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body class="page__body">
-    <header class="main-header">
-        <a class="main-header__logo" href="#">
-          <img class="main-header__mobile-logo-image" alt="логотип" src="../source/img/mobile-logo-image.svg">
-          <img class="main-header__logo-text logo-text" alt="логотип" src="../source/img/logo-text.svg">
-        </a>
-        <nav class="main-nav">
+    <header class="main-header page__header">
+        <div class="main-header__logo-wrapper">
+          <a class="main-header__logo" href="#">
+            <img class="main-header__mobile-logo-image" alt="логотип" src="../source/img/mobile-logo-image.svg">
+            <img class="main-header__logo-text logo-text" alt="логотип" src="../source/img/logo-text.svg">
+          </a>
+        </div>
+        <nav class="main-header__main-nav main-nav">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a href="#">
+                <a href="index.html">
                   ГЛАВНАЯ
                 </a>
               </li>
@@ -27,7 +31,7 @@
                 </a>
               </li>
               <li class="main-nav__item">
-                <a href="#">
+                <a href="forms.html">
                   ПОДБОР ПРОГРАММЫ
                 </a>
               </li>

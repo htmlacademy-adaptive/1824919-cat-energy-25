@@ -2,18 +2,24 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
-    <header class="main-header">
-      <a class="main-header__logo" href="#">
-        <img class="main-header__mobile-logo-image" alt="логотип" src="../source/img/mobile-logo-image.svg">
-        <img class="main-header__logo-text logo-text" alt="логотип" src="../source/img/logo-text.svg">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+    <header class="main-header main-header--opened main-header--nojs  page__main-header">
+      <div class="main-header__wrapper">
+        <a class="main-header__mobile-logo-image" href="#">
+          <img alt="логотип" src="img/mobile-logo-image.svg">
+        </a>
+        <a class="main-header__logo-text" href="#">
+          <img alt="логотип" src="img/logo-text.svg">
+        </a>
+        <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+      </div>
+      <nav class="main-nav main-header__main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -22,12 +28,12 @@
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="#">
+              <a href="catalog.html">
                 КАТАЛОГ ПРОДУКЦИИ
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="#">
+              <a href="forms.html">
                 ПОДБОР ПРОГРАММЫ
               </a>
             </li>
@@ -44,79 +50,83 @@
             питание для котов
           </h1>
           <p class="offer__slogan">
-            Занялся собой? Займись котом!
+            ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!
           </p>
         </header>
         <img class="offer__image" alt="Функциональное питание" src="img/mobile-food-image.png">
-        <a class="offer__link" href="#">
+        <a class="offer__button button" href="#">
           ПОДОБРАТЬ ПРОГРАММУ
         </a>
       </div>
       </section>
-      <section class="catalog">
-        <ul class="catalog__list">
-          <li class="catalog__item">
-            <h2 class="catalog__title">
-              ПОХУДЕНИЕ
-            </h2>
-            <p class="catalog__text">
-              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-            </p>
-            <a class="catalog__link">
-              каталог slim
-            </a>
-          </li>
-          <li class="catalog__item">
-            <h2 class="catalog__title">
-                НАБОР МАССЫ
-            </h2>
-            <p class="catalog__text">
-              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-            </p>
-            <a class="catalog__link">
-              каталог pro
-            </a>
-          </li>
-        </ul>
+      <section class="programs">
+        <div class="programs__wrapper">
+          <ul class="programs__list">
+            <li class="programs__item programs__item--slim">
+              <h2 class="programs__title">
+                ПОХУДЕНИЕ
+              </h2>
+              <p class="programs__text">
+                Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+              </p>
+              <a class="programs__link">
+                КАТАЛОГ SLIM
+              </a>
+            </li>
+            <li class="programs__item programs__item--pro">
+              <h2 class="programs__title">
+                  НАБОР МАССЫ
+              </h2>
+              <p class="programs__text">
+                Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+              </p>
+              <a class="programs__link">
+                КАТАЛОГ PRO
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="instruction">
-        <h2 class="instruction__title">
-          Как это работает
-        </h2>
-        <ul class="instruction__list">
-          <li class="instruction__item">
-            <img class="instruction__image" alt="" src="img/leaf.svg">
-            <p class="instruction__text">
-              Функциональное питание
-              содержит только полезные
-              питательные вещества.
-            </p>
-          </li>
-          <li class="instruction__item">
-            <img class="instruction__image" src="img/boiling-water.svg">
-            <p class="instruction__text">
-              Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-<<<<<<< HEAD
-            </p>
-=======
-            </p>  
->>>>>>> d08f0e7c58eed128aca22acfecc0b3bf4e79cde8
-          </li>
-          <li class="instruction__item">
-            <img class="instruction__image" src="img/tableware.svg">
-            <p class="instruction__text">
-              Замените один-два приема 
-              обычной еды на наше 
-              функциональное питание.
-            </p>
-          </li>
-          <li class="instruction__item">
-            <img class="instruction__image" src="img/alarm.svg">
-            <p class="instruction__text">
-              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-            </p>
-          </li>
-        </ul>
+        <div class="instruction__wrapper">
+          <h2 class="instruction__title">
+            Как это работает
+          </h2>
+          <ul class="instruction__list">
+            <li class="instruction__item">
+              <img class="instruction__image" alt="" width="80" height="80" src="img/leaf.svg">
+              <p class="instruction__text">
+                Функциональное питание <br>
+                содержит только полезные
+                питательные вещества.
+              </p>
+              <span class="instruction__number">1</span>
+            </li>
+            <li class="instruction__item">
+              <img class="instruction__image" width="80" height="80" src="img/boiling-water.svg">
+              <p class="instruction__text">
+                Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+              </p>
+              <span class="instruction__number">2</span>
+            </li>
+            <li class="instruction__item">
+              <img class="instruction__image" width="80" height="80" src="img/tableware.svg">
+              <p class="instruction__text">
+                Замените один-два приема 
+                обычной еды на наше 
+                функциональное питание.
+              </p>
+              <span class="instruction__number">3</span>
+            </li>
+            <li class="instruction__item">
+              <img class="instruction__image" width="80" height="80" src="img/alarm.svg">
+              <p class="instruction__text">
+                Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+              </p>
+              <span class="instruction__number">4</span>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="examples">
         <h2 class="examples__title">
@@ -197,5 +207,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
