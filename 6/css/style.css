@@ -19,28 +19,28 @@ img {
   font-family: "oswald";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "oswald";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/oswaldregular.woff2") format("woff2");
+  src: url("../fonts/oswaldregular.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "oswald";
   font-style: normal;
   font-weight: 500;
-  src: url("../../fonts/oswaldmedium.woff") format("woff");
+  src: url("../fonts/oswaldmedium.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "oswald";
   font-style: normal;
   font-weight: 500;
-  src: url("../../fonts/oswaldmedium.woff2") format("woff2");
+  src: url("../fonts/oswaldmedium.woff2") format("woff2");
   font-display: swap;
 }
 .button {
@@ -382,7 +382,7 @@ img {
     height: 576px;
     position: absolute;
     top: -576px;
-    background-image: url("../../img/cat-fat.png");
+    background-image: url("../img/cat-fat.png");
     background-repeat: no-repeat;
     z-index: 2;
   }
@@ -392,7 +392,7 @@ img {
     height: 576px;
     position: absolute;
     top: -576px;
-    background-image: url("../../img/cat-skinny.png");
+    background-image: url("../img/cat-skinny.png");
     background-repeat: no-repeat;
     z-index: 2;
   }
