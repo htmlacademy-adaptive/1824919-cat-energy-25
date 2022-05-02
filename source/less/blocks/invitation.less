@@ -1,0 +1,70 @@
+.invitation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
+.invitation__wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 26px 20px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    width: 709px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 565px;
+    padding: 56px 80px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    position: absolute;
+    top: 95px;
+    left: 8%;
+  }
+}
+
+.invitation__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  display: inline-block;
+  width: 139px;
+
+  @media (min-width: @desktop-width) {
+    width: 163px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #111111;
+    margin: 0;
+  }
+}
+
+.invitation__adress {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  display: inline-block;
+  width: 139px;
+
+  @media (min-width: @desktop-width) {
+    width: 155px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.invitation__map {
+  width: 100%;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
+}
