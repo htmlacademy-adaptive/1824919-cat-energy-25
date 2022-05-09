@@ -15,20 +15,7 @@
   @media (min-width: @desktop-width) {
     justify-content: space-between;
     min-width: 1220px;
-    margin-bottom: 212px;
-
-    &::after {
-      content: "";
-      width: 720px;
-      height: 697px;
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/desktop-cat.jpg");
-      background-repeat: no-repeat;
-      background-position: left;
-      position: absolute;
-      left: 610px;
-      top: 0;
-      z-index: -2;
-    }
+    margin-bottom: 0px;
   }
 }
 
@@ -47,6 +34,11 @@
 
   @media (min-width: @tablet-width) {
     min-width: 174px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 59px;
+    margin-top: 55px;
   }
 }
 
