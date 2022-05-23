@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 100%;
   margin: auto;
+  margin-top: 19px;
   background-color: #ffffff;
   z-index: 100;
 
@@ -10,7 +11,7 @@
     margin: 0;
     background: transparent;
     margin-left: auto;
-    margin-top: 70px;
+    margin-top: 68px;
   }
 }
 
@@ -49,6 +50,12 @@
   @media (min-width: @tablet-width) {
     &:not(:last-child) {
       margin-right: 20px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:not(:last-child) {
+      margin-right: 34px;
     }
   }
 }
@@ -98,7 +105,9 @@
       z-index: 10;
     }
   }
+}
 
+@media (min-width: @desktop-width) {
   .main-nav__list--cat .main-nav__item--active a {
     &::before {
       background-color: #ffffff;

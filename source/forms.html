@@ -9,8 +9,11 @@
 <body class="page__body">
   <header class="main-header main-header--opened main-header--nojs  page__main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__mobile-logo-image" href="#">
-        <img alt="логотип" src="img/mobile-logo-image.svg">
+      <a class="main-header__mobile-logo-link" href="#">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-text-big.svg">
+          <img class="main-header__mobile-logo-image" alt="логотип" src="img/mobile-logo-image.svg">
+        </picture>
       </a>
       <a class="main-header__logo-text" href="#">
         <img alt="логотип" src="img/logo-text.svg">

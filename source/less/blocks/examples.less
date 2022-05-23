@@ -3,11 +3,13 @@
   background-color: #eaeaea;
 
   @media (min-width: @tablet-width) {
-    background-image: linear-gradient(to bottom, #ffffff 60%,#EAEAEA 40%);
+    background-image: linear-gradient(to bottom, #ffffff 56%,#EAEAEA 44%);
+    padding-bottom: 45px;
   }
 
   @media (min-width: @desktop-width) {
-    background-image: linear-gradient(to bottom, #ffffff 20%,#EAEAEA 0%);
+    background-image: linear-gradient(to bottom, #ffffff 22%,#EAEAEA 0%);
+    padding-bottom: 0;
   }
 }
 
@@ -25,7 +27,14 @@
   @media (min-width: @desktop-width) {
     display: flex;
     width: 1224px;
+    padding-top: 0;
+    box-sizing: border-box;
+    min-height: auto;
   }
+}
+
+.examples__main-wrapper {
+  margin-bottom: 45px;
 }
 
 @media (min-width: @desktop-width) {
@@ -45,6 +54,7 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: @desktop-width) {
@@ -64,6 +74,11 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 54px;
+    padding-right: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 51px;
   }
 }
 
@@ -73,6 +88,10 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 50px;
   }
 }
 
@@ -90,6 +109,7 @@
   @media (min-width: @tablet-width) {
     width: 162px;
     min-height: 70px;
+    margin-right: 40px;
   }
 }
 
@@ -138,6 +158,7 @@
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -145,13 +166,22 @@
     text-align: end;
     margin-top: 10px;
     text-transform: uppercase;
+
+    & span {
+      margin-top: 7px;
+      display: block;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    width: auto;
+    width: 357px;
+    display: block;
+    text-align: left;
 
     & span {
+      margin: 0;
       margin-left: 50px;
+      display: inline;
     }
   }
 }
@@ -161,7 +191,29 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
+    position: absolute;
+  }
+}
+
+.i:hover {
+  opacity: 0.3;
+}
+
+.examples-image--skinny {
+  @media (max-width: @tablet-width) {
     display: none;
+  }
+
+  position: relative;
+  left: 40px;
+  top: 10px;
+}
+
+.examples-image--fat {
+  margin-bottom: 18px;
+  @media (min-width: @tablet-width) {
+    width: 677px;
+    height: 520px;
   }
 }
 
@@ -186,30 +238,8 @@
 
 .examples__image-container {
   @media (min-width: @tablet-width) {
-    margin-top: 576px;
+    width: 591px;
+    height: 576px;
     position: relative;
-    z-index: 2;
-
-    &::after {
-      content: '';
-      width: 591px;
-      height: 576px;
-      position: absolute;
-      top: -576px;
-      background-image: url("../img/cat-fat.png");
-      background-repeat: no-repeat;
-      z-index: 2;
-    }
-
-    &::before {
-      content: '';
-      width: 591px;
-      height: 576px;
-      position: absolute;
-      top: -576px;
-      background-image: url("../img/cat-skinny.png");
-      background-repeat: no-repeat;
-      z-index: 2;
-    }
   }
 }
