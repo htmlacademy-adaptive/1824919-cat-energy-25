@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-color: #ffffff;
 
   @media (min-width: @desktop-width) {
     position: relative;
@@ -13,10 +14,12 @@
   flex-direction: row;
   padding: 26px 20px;
   margin: 0 auto;
+  background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;
-    width: 709px;
+    width: 624px;
+    padding: 58px 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -26,7 +29,7 @@
     background-color: #ffffff;
     position: absolute;
     top: 95px;
-    left: 8%;
+    left: 10%;
   }
 }
 
@@ -36,6 +39,14 @@
   font-weight: 400;
   display: inline-block;
   width: 139px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 170px;
+    color: #111111;
+  }
 
   @media (min-width: @desktop-width) {
     width: 163px;
@@ -49,9 +60,22 @@
 .invitation__adress {
   font-family: "Arial", sans-serif;
   font-size: 14px;
+  font-style: normal;
   line-height: 20px;
   display: inline-block;
   width: 139px;
+
+  @media (min-width: @tablet-width) {
+    text-align: end;
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+
+    & span {
+      display: block;
+      margin-top: 15px;
+    }
+  }
 
   @media (min-width: @desktop-width) {
     width: 155px;

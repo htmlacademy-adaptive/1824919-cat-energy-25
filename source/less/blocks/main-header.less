@@ -14,21 +14,19 @@
 
   @media (min-width: @desktop-width) {
     justify-content: space-between;
-    min-width: 1220px;
-    margin-bottom: 212px;
+    min-width: 1216px;
+    margin-bottom: 0px;
+  }
+}
 
-    &::after {
-      content: "";
-      width: 720px;
-      height: 697px;
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/desktop-cat.jpg");
-      background-repeat: no-repeat;
-      background-position: left;
-      position: absolute;
-      left: 610px;
-      top: 0;
-      z-index: -2;
-    }
+.main-header__logo-image {
+  @media (min-width: @tablet-width) {
+    margin-top: 0px;
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
   }
 }
 
@@ -48,13 +46,23 @@
   @media (min-width: @tablet-width) {
     min-width: 174px;
   }
+
+  @media (min-width: @desktop-width) {
+    height: 59px;
+    margin-top: 55px;
+    width: 202px;
+  }
 }
 
-.main-header__mobile-logo-image {
+.main-header__mobile-logo-link {
   height: 38px;
 
   @media (max-width: @mobile-width-only) {
     margin-right: 56px;
+  }
+
+  @media (min-width: @tablet-width) {
+    // height: 100%;
   }
 }
 
@@ -63,6 +71,10 @@
 
   @media (max-width: @mobile-width-only) {
     margin-right: 65px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -112,10 +124,16 @@
   .main-header--opened .main-header__main-nav {
     display: block;
     position: absolute;
-    top: 66px;
+    top: 65px;
   }
 
   .main-header--closed .main-header__main-nav {
     display: none;
+  }
+
+  .main-header--nojs .main-header__main-nav {
+    display: block;
+    position: relative;
+    top: 0;
   }
 }
