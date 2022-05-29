@@ -60,10 +60,6 @@
   @media (max-width: @mobile-width-only) {
     margin-right: 56px;
   }
-
-  @media (min-width: @tablet-width) {
-    // height: 100%;
-  }
 }
 
 .main-header__logo-text {
@@ -135,5 +131,9 @@
     display: block;
     position: relative;
     top: 0;
+  }
+
+  .main-header--nojs .main-header__toggle {
+    display: none;
   }
 }
