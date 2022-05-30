@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
   <title>>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
 </head>
 <body class="page__body">
   <header class="main-header main-header--opened main-header--nojs  page__main-header">
@@ -75,12 +79,12 @@
                 <span class="form__radio-mark"></span>
                 ПОХУДЕНИЕ
               </label>
-              <label class="form__label-text">
+              <label class="form__label-text form__label-text--radio">
                 <input class="form__input form__input--radio" name="program" value="weight gain" type="radio">
                 <span class="form__radio-mark"></span>
                 НАБОР МАССЫ
               </label>
-              <label class="form__label-text">
+              <label class="form__label-text form__label-text--radio">
                 <input class="form__input form__input--radio" name="program" value="advice-need" type="radio">
                 <span class="form__radio-mark"></span>
                 НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)
@@ -111,23 +115,23 @@
           <div class="form__decorative-line"></div>
           <fieldset class="form__item form__item--addition">
             <h2 class="form__title">Дополнительно</h2>
-            <div class="form__item--addition-container">
+            <div class="form__item-addition-container">
               <label class="form__label-text form__label-text--checkbox">
                 <input class="form__input form__input--checkbox" type="checkbox" checked>
                 <span class="form__checkbox-mark"></span>
                 САХАРОЗАМЕНИТЕЛЬ
               </label>
-              <label class="form__label-text">
+              <label class="form__label-text form__label-text--checkbox">
                 <input class="form__input form__input--checkbox" type="checkbox">
                 <span class="form__checkbox-mark"></span>
                 ПИТЬЕВАЯ ВОДА
               </label>
-              <label class="form__label-text">
+              <label class="form__label-text form__label-text--checkbox">
                 <input class="form__input form__input--checkbox" type="checkbox">
                 <span class="form__checkbox-mark"></span>
                 МОЛОКО
               </label>
-              <label class="form__label-text">
+              <label class="form__label-text form__label-text--checkbox">
                 <input class="form__input form__input--checkbox" type="checkbox">
                 <span class="form__checkbox-mark"></span>
                 ВИТАМИНЫ
@@ -160,7 +164,7 @@
         </section>
         <div class="main-footer__wrapper">
           <div class="main-footer__logo">
-            <img class="logo-text" width="128" height="24" src="img/logo-text.svg">
+            <img class="logo-text" alt="cat energy" width="128" height="24" src="img/logo-text.svg">
           </div>
           <div class="main-footer__social social">
             <ul class="social__list">
@@ -195,7 +199,7 @@
               <b class="copyright__text">HTML Academy</b>
             </a>
             <a class="copyright__link" href="#">
-              <img class="copyright__logo" src="img/html-academy-logo.svg">
+              <img class="copyright__logo"  alt="HTML Academy" width="27" height="34" src="img/html-academy-logo.svg">
             </a>
           </div>
         </div>

@@ -60,7 +60,7 @@
   margin: 0;
   margin-bottom: 15px;
   width: 76px;
-  font-family: "Oswald";
+  font-family: "Oswald", Arial, sans-serif;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -68,7 +68,11 @@
     width: 155px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 21px;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 16px;
   }
 }
 
@@ -83,8 +87,8 @@
   line-height: 16px;
 
   @media (min-width: @tablet-width) {
-    row-gap: 13px;
-    margin-bottom: 42px;
+    row-gap: 10px;
+    margin-bottom: 35px;
     font-size: 16px;
   }
 }
@@ -107,6 +111,7 @@
 .card__description {
   margin-left: 0;
   text-align: end;
+
   @media (min-width: @tablet-width) {
     margin-top: 0;
   }
@@ -127,7 +132,7 @@
   height: 40px;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Oswald", arial, sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
