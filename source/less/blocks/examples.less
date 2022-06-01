@@ -1,27 +1,41 @@
 .examples {
   display: flex;
-  background-color: #eaeaea;
-
-  @media (min-width: @tablet-width) {
-    background-image: linear-gradient(to bottom, #ffffff 56%,#EAEAEA 44%);
-    padding-bottom: 45px;
-  }
 
   @media (min-width: @desktop-width) {
-    background-image: linear-gradient(to bottom, #ffffff 24%,#EAEAEA 0%);
-    padding-bottom: 0;
+    background-image: linear-gradient(to bottom, #ffffff 20%,#EAEAEA 0%);
+  }
+}
+
+.examples__container-main {
+  display: flex;
+  background-color: #eaeaea;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+   background-color: #ffffff;
+   display: flex;
+   flex-direction: column;
+  }
+
+  @media(min-width: @desktop-width) {
+    flex-direction: row;
+    width: 1220px;
+    margin: 0 auto;
+    background: none;
   }
 }
 
 .examples__wrapper {
   margin: 0 auto;
   width: 280px;
-  min-height: 650px;
   padding: 25px 20px;
   color: #000000;
 
   @media (min-width: @tablet-width) {
     width: 708px;
+    z-index: 15;
   }
 
   @media (min-width: @desktop-width) {
@@ -29,7 +43,6 @@
     width: 1224px;
     padding-top: 0;
     box-sizing: border-box;
-    min-height: auto;
     margin-top: -7px;
   }
 }
@@ -191,59 +204,13 @@
   }
 }
 
-.examples__image {
-  display: block;
-  margin: 0 auto;
-
-  @media (min-width: @tablet-width) {
-    position: absolute;
-  }
-}
-
-.examples__image--skinny {
-  @media (max-width: @tablet-width) {
-    display: none;
-  }
-
-  position: relative;
-  left: 40px;
-  top: 10px;
-}
-
-.examples__image--fat {
-  margin-bottom: 18px;
-
-  @media (min-width: @tablet-width) {
-    width: 677px;
-    height: 520px;
-  }
-}
-
-.examples__tool {
-  display: flex;
-  font-size: 16px;
-  line-height: 20px;
-  justify-content: center;
-}
 
 @media (min-width: @tablet-width) {
   .examples__container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 15;
   }
 }
 
-.examples__image-container {
-  @media (min-width: @tablet-width) {
-    width: 591px;
-    height: 576px;
-    right: -60px;
-    position: relative;
-  }
-
-  @media (min-width: @desktop-width) {
-    right: 0;
-    top: -40px;
-  }
-}

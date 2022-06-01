@@ -145,48 +145,64 @@
         </div>
       </section>
       <section class="examples">
-        <div class="examples__wrapper">
-          <div class="examples__main-wrapper">
-            <h2 class="examples__title">
-              Живой пример
-            </h2>
-            <p class="examples__text">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-            </p>
-            <div class="examples__container">
-              <dl class="examples__data-list">
-                <div class="examples__item">
-                  <dt class="examples__number">
-                    5 КГ
-                  </dt>
-                  <dd class="examples__description">
-                    снижение веса
-                  </dd>
+        <div class="examples__container-main">
+          <div class="examples__wrapper">
+            <div class="examples__main-wrapper">
+              <h2 class="examples__title">
+                Живой пример
+              </h2>
+              <p class="examples__text">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              </p>
+              <div class="examples__container">
+                <dl class="examples__data-list">
+                  <div class="examples__item">
+                    <dt class="examples__number">
+                      5 КГ
+                    </dt>
+                    <dd class="examples__description">
+                      снижение веса
+                    </dd>
+                  </div>
+                  <div class="examples__item">
+                    <dt class="examples__number">
+                      60 ДНЕЙ
+                    </dt>
+                    <dd class="examples__description">
+                      затрачено времени
+                    </dd>
+                  </div>
+                </dl>
+                <div class="examples__additional-item">
+                  Затраты на питание: <span>15 000 РУБ.</span>
                 </div>
-                <div class="examples__item">
-                  <dt class="examples__number">
-                    60 ДНЕЙ
-                  </dt>
-                  <dd class="examples__description">
-                    затрачено времени
-                  </dd>
-                </div>
-              </dl>
-              <div class="examples__additional-item">
-                Затраты на питание: <span>15 000 РУБ.</span>
               </div>
             </div>
           </div>
-          <div class="examples__image-container">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/cat-fat.png 1x, img/cat-fat@2x.png 2x">
-              <img class="examples__image examples__image--fat" alt="толстый кот" width="280" height="232" src="img/mobile-cat.png" srcset="img/mobile-cat.png 2x">
-            </picture>
-            <img class="examples__image examples__image--skinny" alt="худой кот" width="545" height="520" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x">
-          <label class="examples__tool">БЫЛО
-            <input class="examples__toggle-image" type="range">
-            СТАЛО
-          </label>
+          <div class=slider>
+            <div class="slider__image-container">
+              <ul class="slider__list-picture slider__list">
+                <li class="slider__item-picture slider__item slider__item--before" ><div class="slider__box slider__box--before">
+                  <picture>
+                    <img class="slider__cat-fat" width="677" height="520" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x" alt="Толстый кот" >
+                    </picture>
+                  </div>
+                </li>
+                <li class="slider__item-picture slider__item slider__item--after slider__item--current">
+                  <div class="slider__box slider__box--after">
+                    <picture>
+                      <img class="slider__cat-skinny" height="520" width="545" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x" alt="Тощий кот" >
+                      </picture>
+                    </div>
+                 </li>
+              </ul>
+                <div class="slider__tool-wrapper">
+                  <label class="slider__tool">БЫЛО
+                    <input class="slider__toggle-image" type="range">
+                    СТАЛО
+                  </label>
+              </div>
+            </div>
           </div>
         </div>
       </section>
